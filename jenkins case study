@@ -1,0 +1,8 @@
+two important path for  jenkins
+# landing path        
+# default path
+
+#lp---- var/lib/jenkins/
+
+#dp -etc/default/ 
+configuration files are located in dp path
