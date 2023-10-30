@@ -1,0 +1,32 @@
+\\\\\\\\\\\\\aws lamabda\\\\\\\\\\\=== how to make  free website by python ve-rsion
+
+----html projects----
+
+def lambda_handler(event, context):
+    
+    body = '''
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+        <p>Hi! My name is Tony. I like to teach people about websites.</p>
+        <img src="https://tonyteaches.tech/wp-content/uploads/2021/08/tony-teaches-tech-youtube-banner.jpg" width="500" />
+        <p>Like, comment, subscribe!</p>
+        <p>Check out my <a href='/blog">blog</a>.</p>
+    </body>
+    </html>'''
+    
+    response = {
+        'statusCode': 200,
+        'headers': {"Content-Type": "text/html",},
+        'body': body
+    }
+    
+    return response
+
+
+-------------------------------------------------------======-------------------------------------
