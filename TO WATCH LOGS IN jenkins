@@ -1,0 +1,7 @@
+sudo su jenkins
+/home/ubuntu$ cd /etc/systemd/system/
+ls
+sudo journalctl -u precium.service -xe
+
+[sudo] password for jenkins: 
+/////precium@2023/////
