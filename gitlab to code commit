@@ -1,0 +1,8 @@
+$ git clone --mirror https://gitlab.com/ai_ml_team/webapp-frontend.git aws=demo
+
+$ cd aws=demo/
+
+ls
+$ git push https://git-codecommit.us-east-1.amazonaws.com/v1/repos/Precium_Frontend_Dev
+
+https://youtu.be/zdWSKqw31tc?si=VpETcnDJHEmQHS7E
