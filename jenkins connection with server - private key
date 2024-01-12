@@ -1,0 +1,9 @@
+jenkins@ip-172-31-86-246:/home/ubuntu$ cd
+jenkins@ip-172-31-86-246:~$ ls
+jenkins_slave
+jenkins@ip-172-31-86-246:~$ cd jenkins_slave/
+
+-86-246:~/jenkins_slave$ cd ~/.ssh
+jenkins@ip-172-31-86-246:~/.ssh$ ls
+authorized_keys  id_rsa  id_rsa.pub
+jenkins@ip-172-31-86-246:~/.ssh$ cat id_rsa
