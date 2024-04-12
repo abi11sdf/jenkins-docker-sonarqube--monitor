@@ -1,0 +1,12 @@
+FROM node:18-alpine
+WORKDIR /react-docker-example/
+COPY public/ /react-docker-example/public
+COPY src/ /react-docker-example/src
+COPY package.json /react-docker-example/
+RUN npm install
+CMD ["npm", "start"]
+
+
+
+docker image build -t react-example-image:upgrade .
+docker run -dp 8000:3000 --name react-example-container react-docker-example:latest
