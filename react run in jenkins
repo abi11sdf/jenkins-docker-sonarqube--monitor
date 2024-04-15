@@ -1,0 +1,7 @@
+jenkins@ip-172-31-21-47:~/jenkins_slave/workspace/psp-nexus-backend$
+
+--- pm2 start .start-script.json
+
+
+pm2 logs0
+npm run start :dev
