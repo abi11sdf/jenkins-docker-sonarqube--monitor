@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Stop and remove existing container if running
+docker ps -a | grep dlp-uat-admin | awk '{print $1}' | xargs -I {} docker stop {} && docker ps -a | grep dlp-uat-admin | awk '{print $1}' | xargs -I {} docker rm {}
+
+# Install dependencies
+npm install
+
+# Build the project
+export CI=false
+NODE_OPTIONS=--max-old-space-size=4096 npm run build
+
+# Create Dockerfile
+cat <<EOF > Dockerfile
+FROM node:latest
+WORKDIR /app
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]
+EOF
+
+# Build Docker image
+docker build -t dlp-uat-admin .
+
+# Remove existing container if running
+docker rm -f dlp-uat-admin || true
+
+# Run Docker container on port 4000
+docker run -d -p 4000:3000 --name dlp-uat-admin dlp-uat-admin
