@@ -1,0 +1,52 @@
+https://docs.google.com/document/d/11fwuP-3icBWvnmX7Tydjup9QKbfXmFAP7D7e_B9rGBo/edit?usp=sharing
+
+
+
+
+Deployment (vscode to Git):
+Step 1:
+Create a folder, open the browser, and search for GitLab. Sign up for GitLab, open GitLab, and create the repository.
+
+
+
+
+Step 2:
+Create a new file to get a URL in the repository.
+
+
+
+Hint :
+The commit message is important because new changes will be recorded within it.
+
+
+Step 3:
+Open chrome to download the git. And click install.
+
+Step 4:
+Go to the command prompt , type the git and press enter. Enter the git config –global
+user.name “Git login name” and git config –global user.email “Git login email”
+
+
+Step 5:
+Open the vs code, select the git folder and create the new (sfdx project with manifest). Connect your development org and press the (Shift+ctrl+P).Click the (Package .xml generator) and select your components.Use the cd “git repository name” code to (change the directory for local to git folder).
+
+
+
+HINT: Retrieve the Package.xml(it’s to find any error shown before the push method).
+Step 6:
+If you see unadded files, use the command (git add .) to prepare the files for commit.
+
+
+Step 7:
+Next step to commit.(file ready for push in repository)
+Git commit -m “YOUR COMMIT MESSAGE”
+
+HINT :
+● 	Next step is to push the files within a git repository.
+● 	Commit message is important to push the components.
+● 	Check your branch in Git and ensure it matches in VS Code.
+
+Step 8:
+Open your git repository and verify your codes.
+
+ 
