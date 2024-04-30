@@ -1,0 +1,15 @@
+ssh - connection through username -passwrd
+
+sudo nano /etc/ssh/sshd_config
+
+PasswordAuthentication yes
+
+sudo service ssh restart
+
+sudo passwd username
+
+
+for ACCESS 
+
+
+sudo chmod -R 777 /home/PATH/
