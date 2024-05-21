@@ -1,0 +1,28 @@
+Step 1: Resize the Partition
+Use growpart to resize the partition to fill the available space on the disk.
+
+bash
+Copy code
+ -------------------------------------------------------------------------------------------------------------------------------sudo growpart /dev/nvme0n1 1
+Step 2: Resize the Filesystem
+Next, resize the filesystem on the partition. The command to do this depends on the type of filesystem you are using.
+
+For ext4 filesystem:
+
+bash
+Copy code
+-------------------------------------------------------------------------------------------------------------------------------sudo resize2fs /dev/nvme0n1p1
+For XFS filesystem:
+
+bash
+Copy code
+-------------------------------------------------------------------------------------------------------------------------------sudo xfs_growfs /
+Verify the Changes
+After resizing the partition and filesystem, verify that the new size is reflected.
+
+bash
+Copy code
+-------------------------------------------------------------------------------------------------------------------------------lsblk
+-------------------------------------------------------------------------------------------------------------------------------df -h
+Complete Steps
+Here is a summary of the complete commands you need to run:
