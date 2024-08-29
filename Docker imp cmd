@@ -1,0 +1,7 @@
+ docker system df
+docker system prune -a
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          6         6         26.07GB   1.049GB (4%)
+Containers      10        0         8.637MB   8.637MB (100%)
+Local Volumes   0         0         0B        0B
+Build Cache     98        12        18.83GB   18.57GB
